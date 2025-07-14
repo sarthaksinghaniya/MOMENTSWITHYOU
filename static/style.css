@@ -70,6 +70,28 @@ h1 {
   transition: opacity 1s ease-in-out;
 }
 
+/* Pause Button */
+#controls {
+  margin-top: 20px;
+}
+
+#controls button {
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f06292;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#controls button:hover {
+  background-color: #ec407a;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -85,7 +107,6 @@ h1 {
   100% { opacity: 1; transform: scale(1); }
 }
 
-/* UNLOCK SCREEN */
 .unlock-screen {
   position: fixed;
   top: 0;
@@ -155,7 +176,6 @@ h1 {
   pointer-events: none;
 }
 
-/* ROTATE LAST IMAGE IF SIDEWAYS */
 img.rotate {
   transform: rotateX(180deg);
   transition: transform 1s ease;
